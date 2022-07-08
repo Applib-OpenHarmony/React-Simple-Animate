@@ -1,0 +1,11 @@
+{
+  "module": {
+    "name": "reactslider",
+    "type": "har",
+    "deviceTypes": [
+      "phone",
+      "tablet"
+    ],
+    "uiSyntax": "ets"
+  }
+}
