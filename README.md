@@ -9,7 +9,7 @@ Install using npm
 ```npm i @ohos/reactslider```
 ## React slider working
 
-![](../../OneDrive/Desktop/ReactSlider.gif)
+![ReactSlider](https://user-images.githubusercontent.com/108897799/177938116-daeb5ca7-13fb-4f31-8d66-87f3ab12679f.gif)
 
 ## Usage Instructions
 
