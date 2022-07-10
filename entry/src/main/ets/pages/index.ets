@@ -27,6 +27,9 @@ struct Index {
     this.ReactSliderModel1.setTrackColor("#000000")
     this.ReactSliderModel1.setSelectedColor("#587687")
     this.ReactSliderModel1.setShowSteps(false)
+    this.ReactSliderModel1.setTextColor("#ffffff")
+    this.ReactSliderModel1.setButtonColor("#000000")
+    this.ReactSliderModel1.setImageHeight(350)
   }
 
   build() {

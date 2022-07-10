@@ -18,6 +18,9 @@ export class ReactSliderModel {
   private trackColor: string | ResourceColor = "#000000"
   private selectedColor: string | ResourceColor = "#587687"
   private showSteps: boolean = false
+  private textColor: string |ResourceColor = "#ffffff"
+  private imageHeight :number = 350
+  private buttonColor : string | ResourceColor = "#000000"
   constructor() {
   }
 
@@ -62,6 +65,34 @@ export class ReactSliderModel {
 
   setShowSteps(value: boolean): ReactSliderModel{
     if (value != null && value != undefined) this.showSteps = value
+    return this
+  }
+  getTextColor(): string |ResourceColor {
+    if ((this.textColor == null || this.textColor == undefined)) this.error('textColor')
+    return this.textColor
+  }
+
+  setTextColor(value: string |ResourceColor ): ReactSliderModel{
+    if (value != null && value != undefined) this.textColor = value
+    return this
+  }
+  getButtonColor(): string |ResourceColor {
+    if ((this.buttonColor == null || this.buttonColor == undefined)) this.error('buttonColor')
+    return this.buttonColor
+  }
+
+  setButtonColor(value: string |ResourceColor ): ReactSliderModel{
+    if (value != null && value != undefined) this.buttonColor = value
+    return this
+  }
+
+  getImageHeight(): number {
+    if ((this.imageHeight == null || this.imageHeight == undefined)) this.error('imageHeight')
+    return this.imageHeight
+  }
+
+  setImageHeight(value: number ): ReactSliderModel{
+    if (value != null && value != undefined) this.imageHeight = value
     return this
   }
 }

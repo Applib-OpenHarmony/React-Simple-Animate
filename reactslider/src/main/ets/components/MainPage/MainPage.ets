@@ -33,10 +33,10 @@ export struct ReactSlider {
         Column() {
           Row() {
             Button("prev", { type: ButtonType.Capsule, stateEffect: true })
-              .fontColor("#fffff3")
+              .fontColor(this.obj.getTextColor())
               .height(35)
               .width(70)
-              .backgroundColor("#000000")
+              .backgroundColor(this.obj.getButtonColor())
               .fontSize(15)
               .onClick(() => {
                 animateTo({ duration: 1000 }, () => {
@@ -71,10 +71,10 @@ export struct ReactSlider {
         Column() {
           Row() {
             Button("next", { type: ButtonType.Capsule, stateEffect: true })
-              .fontColor("#fffff3")
+              .fontColor(this.obj.getTextColor())
               .height(35)
               .width(70)
-              .backgroundColor("#000000")
+              .backgroundColor(this.obj.getButtonColor())
               .fontSize(15)
               .onClick(() => {
                 animateTo({ duration: 1000 }, () => {
@@ -88,7 +88,7 @@ export struct ReactSlider {
       Column() {
         Image(this.img[this.inSetValue])
           .width("95%")
-          .height(350)
+          .height(this.obj.getImageHeight())
       }
     }
     .width('100%')
